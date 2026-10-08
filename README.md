@@ -7,7 +7,7 @@ nginx through a NixOS module — one app per subdomain.
 ```nix
 # flake.nix
 {
-  inputs.artcraft-web.url = "github:you/artcraft-web";
+  inputs.artcraft-web.url = "github:squishdacat/artcraft-web-nixos-flake";
 
   outputs = { nixpkgs, artcraft-web, ... }: {
     nixosConfigurations.web = nixpkgs.lib.nixosSystem {
